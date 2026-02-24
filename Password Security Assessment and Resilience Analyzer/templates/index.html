@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Vault | Password Security Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <h1>PASSWORD SECURITY ASSESSMENT AND RESILIENCE ANALYZER</h1>
+        <h1>&#128272; Digital Vault</h1>
+        <p class="subtitle">Check how strong your password really is</p>
+
+        <!-- Password Input -->
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Type your password here...">
+            <button id="togglePassword">&#128065;</button>
+            <button id="generatePassword">Generate</button>
+        </div>
+
+        <!-- Strength Bar -->
+        <div class="strength-section">
+            <div class="strength-bar">
+                <div id="strengthFill"></div>
+            </div>
+            <p id="strengthText">Start typing to analyze...</p>
+        </div>
+
+        <!-- Entropy & Crack Time -->
+        <div class="info-grid">
+            <div class="info-box">
+                <h4>Entropy</h4>
+                <p><span id="entropy">0</span> bits</p>
+            </div>
+            <div class="info-box">
+                <h4>Estimated Crack Time</h4>
+                <p id="crackTime">-</p>
+            </div>
+        </div>
+
+        <!-- Security Checklist -->
+        <div class="criteria-section">
+            <h3>Security Checklist</h3>
+            <ul id="criteriaList"></ul>
+        </div>
+
+        <!-- Attack Simulation & AI Pattern Warnings -->
+        <div class="criteria-section">
+            <h3>Attack Simulation</h3>
+            <ul id="attackList"></ul>
+        </div>
+
+        <footer>
+            Built for Hackathon &#128640; | Digital Vault
+        </footer>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
