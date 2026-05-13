@@ -44,5 +44,5 @@ Security Concepts Used Entropy calculation Character pool analysis Brute-force a
 
 Future Improvements Deploy to cloud platforms (Render/Heroku) Add user authentication module Integrate database for password history tracking AI-based password scoring with machine learning Admin dashboard for enterprise password security monitoring
 
-Developed By Ameesha Kumari & Digital Vault Team
+Developed By Ameesha Kumari & Ayesha raza
 
