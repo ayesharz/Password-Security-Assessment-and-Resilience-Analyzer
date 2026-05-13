@@ -116,5 +116,5 @@ Admin dashboard for enterprise password security monitoring
 
 
 Developed By
-Ameesha Kumari & Digital Vault Team
+Ameesha Kumari & Ayesha raza
 
